@@ -50,7 +50,7 @@ namespace PzemReader.Services
             float power = powerRaw / 10.0f;
 
             uint energyRaw = ((uint)r[5] << 16) | r[6];
-            float energy = energyRaw;
+            float energy = energyRaw/1000.0f;
 
             float frequency = r[7] / 10.0f;
             float pf = r[8] / 100.0f;
