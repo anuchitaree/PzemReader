@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace PzemReader.Models
 {
-    public class EnergyHour
+    public class Energy15Minute
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]  // 👈 auto increase
         public int Id { get; set; }
 
-        public DateTime Hour { get; set; }
+        public DateTime Minute { get; set; }
         public float EnergyKwh { get; set; }
-        public float MaxPower { get; set; }
+        public float MaxPower { get; set; } // 🔥 peak ใน 1 นาที
     }
 }

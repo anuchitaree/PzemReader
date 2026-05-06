@@ -15,6 +15,8 @@ namespace PzemReader.Data
         public DbSet<EnergyHour> EnergyHours { get; set; }
         public DbSet<EnergyMinute> EnergyMinutes { get; set; }
 
+        public DbSet<Energy15Minute> Energy15Minutes { get; set; }
+
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)

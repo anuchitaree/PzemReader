@@ -14,6 +14,10 @@ namespace PzemReader
         private float? _lastEnergy = null;
 
         private readonly Dictionary<DateTime, float> _minuteBuffer = new();
+
+        private readonly List<float> _energerTotal = new();
+        private readonly List<float> _powerTotal = new();
+
         private DateTime _currentMinute;
 
         public Worker(ILogger<Worker> logger,
@@ -28,9 +32,13 @@ namespace PzemReader
             _modbus = new ModbusService(
                 opt.Port,
                 opt.BaudRate,
+                opt.DataBits,
+                opt.StopBits,
+                opt.Parity,
                 opt.SlaveId
             );
-            _currentMinute = GetMinuteKey(DateTime.UtcNow);
+            _currentMinute = GetMinuteKey(DateTime.Now);
+
 
         }
 
@@ -38,9 +46,9 @@ namespace PzemReader
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                var now = DateTime.UtcNow;
-                var minuteKey = GetMinuteKey(now);
-
+                var nowUtc = DateTime.UtcNow;
+                var minuteKey = GetMinuteKey(DateTime.Now);
+               
 
                 try
                 {
@@ -62,19 +70,34 @@ namespace PzemReader
                     _lastEnergy = data.Energy;
 
                     // 👉 เก็บ RAW
-                    await SaveRaw(data, now);
+                    await SaveRaw(data, nowUtc);  // every 5 วินาที
+
+
+                   
 
                     // 👉 สะสมรายนาที
                     if (!_minuteBuffer.ContainsKey(minuteKey))
+                    {
                         _minuteBuffer[minuteKey] = 0;
+                        
+                    }
+
+                    _energerTotal.Add(delta);
+                    _powerTotal.Add(data.Power);
 
                     _minuteBuffer[minuteKey] += delta;
 
                     // 👉 ถ้านาทีเปลี่ยน → flush
                     if (minuteKey != _currentMinute)
                     {
-                        await FlushMinute(_currentMinute);
 
+                        var totalEnergy = _energerTotal.Sum();
+                        var PeakPower = _powerTotal.Count > 0 ? _powerTotal.Max() : 0;
+
+                        await FlushMinute(_currentMinute, totalEnergy, PeakPower);
+
+                        _energerTotal.Clear();
+                        _powerTotal.Clear();
                         _minuteBuffer.Remove(_currentMinute);
                         _currentMinute = minuteKey;
                     }
@@ -89,6 +112,10 @@ namespace PzemReader
                 await Task.Delay(5000, stoppingToken);
             }
         }
+
+
+
+
         private DateTime GetMinuteKey(DateTime dt)
         {
             return new DateTime(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, 0);
@@ -105,34 +132,44 @@ namespace PzemReader
                 Voltage = data.Voltage,
                 Current = data.Current,
                 Power = data.Power,
-                Energy = data.EnergyTotal,
+                Energy = data.Energy,
                 Frequency = data.Frequency,
                 PowerFactor = data.PowerFactor,
+                Alarm = data.Alarm,
             });
 
             await db.SaveChangesAsync();
         }
 
         // 🔹 flush นาที
-        private async Task FlushMinute(DateTime minute)
+        private async Task FlushMinute(DateTime minute, float totalEnergy, float peakPower)
         {
             if (!_minuteBuffer.ContainsKey(minute))
                 return;
-
-            using var scope = _scopeFactory.CreateScope();
-            var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-
-            var energy = _minuteBuffer[minute];
-
-            db.EnergyMinutes.Add(new EnergyMinute
+            try
             {
-                Minute = minute,
-                EnergyKwh = energy
-            });
+                using var scope = _scopeFactory.CreateScope();
+                var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-            await db.SaveChangesAsync();
+                var energy = _minuteBuffer[minute];
 
-            _logger.LogInformation($"Saved minute {minute}: {energy} kWh");
+                db.EnergyMinutes.Add(new EnergyMinute
+                {
+                    Minute = minute.ToUniversalTime(),
+                    EnergyKwh = totalEnergy,
+                    MaxPower = peakPower
+                });
+
+                await db.SaveChangesAsync();
+
+                _logger.LogInformation($"Saved minute {minute}: {energy} kWh : {peakPower} kW");
+            }
+            catch (Exception ex)
+            {
+              _logger.LogError(ex, "Error saving minute data");
+             
+            }
+            
         }
     }
 }

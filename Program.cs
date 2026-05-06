@@ -18,6 +18,9 @@ namespace PzemReader
             builder.Configuration.GetSection("Modbus"));
 
             builder.Services.AddHostedService<Worker>();
+            builder.Services.AddHostedService<HouryWorker>();
+            builder.Services.AddHostedService<DayWorker>();
+
 
             var host = builder.Build();
 

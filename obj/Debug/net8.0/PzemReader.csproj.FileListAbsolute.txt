@@ -125,6 +125,7 @@ D:\Project\PzemReader\obj\Debug\net8.0\PzemReader.GeneratedMSBuildEditorConfig.e
 D:\Project\PzemReader\obj\Debug\net8.0\PzemReader.AssemblyInfoInputs.cache
 D:\Project\PzemReader\obj\Debug\net8.0\PzemReader.AssemblyInfo.cs
 D:\Project\PzemReader\obj\Debug\net8.0\PzemReader.csproj.CoreCompileInputs.cache
+D:\Project\PzemReader\obj\Debug\net8.0\PzemReader.sourcelink.json
 D:\Project\PzemReader\obj\Debug\net8.0\PzemReader.csproj.Up2Date
 D:\Project\PzemReader\obj\Debug\net8.0\PzemReader.dll
 D:\Project\PzemReader\obj\Debug\net8.0\refint\PzemReader.dll
