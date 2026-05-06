@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Project\\PzemReader\\",
+  "WorkspaceRootPath": "C:\\Project\\PzemReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\services\\modbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:services\\modbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\dayworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:dayworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\houryworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\houryworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:houryworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\dayworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:dayworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,46 +34,44 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Project\\PzemReader\\appsettings.json",
+              "DocumentMoniker": "C:\\Project\\PzemReader\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Project\\PzemReader\\appsettings.json",
+              "ToolTip": "C:\\Project\\PzemReader\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-05-06T08:48:01.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Worker.cs",
-              "DocumentMoniker": "D:\\Project\\PzemReader\\Worker.cs",
+              "DocumentMoniker": "C:\\Project\\PzemReader\\Worker.cs",
               "RelativeDocumentMoniker": "Worker.cs",
-              "ToolTip": "D:\\Project\\PzemReader\\Worker.cs",
+              "ToolTip": "C:\\Project\\PzemReader\\Worker.cs",
               "RelativeToolTip": "Worker.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAuwA8AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T07:36:26.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T07:36:26.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "HouryWorker.cs",
-              "DocumentMoniker": "D:\\Project\\PzemReader\\HouryWorker.cs",
+              "DocumentMoniker": "C:\\Project\\PzemReader\\HouryWorker.cs",
               "RelativeDocumentMoniker": "HouryWorker.cs",
-              "ToolTip": "D:\\Project\\PzemReader\\HouryWorker.cs",
+              "ToolTip": "C:\\Project\\PzemReader\\HouryWorker.cs",
               "RelativeToolTip": "HouryWorker.cs",
               "ViewState": "AgIAADcAAAAAAAAAAADwv1oAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T07:17:36.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T07:17:36.408Z"
             }
           ]
         },
@@ -79,13 +81,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ModbusService.cs",
+              "DocumentMoniker": "C:\\Project\\PzemReader\\Services\\ModbusService.cs",
+              "RelativeDocumentMoniker": "Services\\ModbusService.cs",
+              "ToolTip": "C:\\Project\\PzemReader\\Services\\ModbusService.cs",
+              "RelativeToolTip": "Services\\ModbusService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowCUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T15:09:26.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DayWorker.cs",
-              "DocumentMoniker": "D:\\Project\\PzemReader\\DayWorker.cs",
+              "DocumentMoniker": "C:\\Project\\PzemReader\\DayWorker.cs",
               "RelativeDocumentMoniker": "DayWorker.cs",
-              "ToolTip": "D:\\Project\\PzemReader\\DayWorker.cs",
+              "ToolTip": "C:\\Project\\PzemReader\\DayWorker.cs",
               "RelativeToolTip": "DayWorker.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwDkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwEMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T07:32:05.514Z",
               "EditorCaption": ""
