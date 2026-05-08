@@ -47,13 +47,13 @@ namespace PzemReader.Services
 
             float voltage = r[0] / 10.0f;
 
-            uint currentRaw = ((uint)r[1] << 16) | r[2];
+            uint currentRaw = ((uint)r[2] << 16) | r[1];
             float current = currentRaw / 1000.0f;
 
-            uint powerRaw = ((uint)r[3] << 16) | r[4];
+            uint powerRaw = ((uint)r[4] << 16) | r[3];
             float power = powerRaw / 10.0f;
 
-            uint energyRaw = ((uint)r[5] << 16) | r[6];
+            uint energyRaw = ((uint)r[6] << 16) | r[5];
             float energy = energyRaw/1000.0f;
 
             float frequency = r[7] / 10.0f;
