@@ -10,8 +10,6 @@ namespace PzemReader.Models
 {
     public class EnergyMinute
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]  // 👈 auto increase
         public int Id { get; set; }
 
         public DateTime Minute { get; set; }

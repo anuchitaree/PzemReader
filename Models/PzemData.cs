@@ -10,8 +10,6 @@ namespace PzemReader.Models
 {
     public class PzemData
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]  // 👈 auto increase
         public int Id { get; set; }
         public DateTime Timestamp { get; set; }
 

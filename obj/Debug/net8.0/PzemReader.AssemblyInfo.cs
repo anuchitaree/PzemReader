@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PzemReader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b61715b7ada2e847d50bceddee61d3448bed5799")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8646cf7493f525635ac3a68f3aae833ca5bab6c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PzemReader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PzemReader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

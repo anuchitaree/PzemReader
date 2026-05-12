@@ -5,4 +5,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.26
 dotnet add package HslCommunication
 
 
+dotnet add package Microsoft.Extensions.Http
+dotnet add package Microsoft.Extensions.Http.Polly
+dotnet add package Polly
+
 dotnet ef migrations add Init
