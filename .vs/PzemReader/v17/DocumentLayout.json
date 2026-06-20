@@ -3,8 +3,29 @@
   "WorkspaceRootPath": "C:\\Project\\PzemReader\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\database\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:database\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|d:\\project\\pzemreader\\package.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:package.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+=======
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\services\\modbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:services\\modbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 8646cf7493f525635ac3a68f3aae833ca5bab6c8
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\dayworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +34,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 27a57763aabab73577ff4edbfefdb23990acc3ed
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|c:\\project\\pzemreader\\houryworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7080D7F-0B35-49FD-9E98-335AC6608627}|PzemReader.csproj|solutionrelative:houryworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 8646cf7493f525635ac3a68f3aae833ca5bab6c8
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +63,58 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "D:\\Project\\PzemReader\\database\\docker-compose.yml",
+              "RelativeDocumentMoniker": "database\\docker-compose.yml",
+              "ToolTip": "D:\\Project\\PzemReader\\database\\docker-compose.yml",
+              "RelativeToolTip": "database\\docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-05-07T08:46:12.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Project\\PzemReader\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Project\\PzemReader\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-06T09:16:27.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\PzemReader\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Project\\PzemReader\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T09:06:46.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Package.txt",
+              "DocumentMoniker": "D:\\Project\\PzemReader\\Package.txt",
+              "RelativeDocumentMoniker": "Package.txt",
+              "ToolTip": "D:\\Project\\PzemReader\\Package.txt",
+              "RelativeToolTip": "Package.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-06T09:05:20.891Z"
+            },
+            {
+              "$type": "Document",
+=======
               "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Project\\PzemReader\\appsettings.json",
@@ -51,8 +136,28 @@
               "RelativeToolTip": "Worker.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAowEgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2026-05-06T07:36:26.835Z",
               "EditorCaption": ""
+=======
+              "WhenOpened": "2026-05-06T07:36:26.835Z"
+            },
+            {
+              "$type": "Document",
+>>>>>>> 27a57763aabab73577ff4edbfefdb23990acc3ed
+              "DocumentIndex": 4,
+              "Title": "HouryWorker.cs",
+              "DocumentMoniker": "C:\\Project\\PzemReader\\HouryWorker.cs",
+              "RelativeDocumentMoniker": "HouryWorker.cs",
+              "ToolTip": "C:\\Project\\PzemReader\\HouryWorker.cs",
+              "RelativeToolTip": "HouryWorker.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwKwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
+              "WhenOpened": "2026-05-06T08:58:51.445Z"
+=======
+              "WhenOpened": "2026-05-06T07:17:36.408Z"
+>>>>>>> 8646cf7493f525635ac3a68f3aae833ca5bab6c8
             }
           ]
         },
@@ -72,6 +177,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T07:32:05.514Z",
               "EditorCaption": ""
+>>>>>>> 27a57763aabab73577ff4edbfefdb23990acc3ed
             }
           ]
         }
