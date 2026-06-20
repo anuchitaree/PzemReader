@@ -2,6 +2,7 @@
 using PzemReader.Data;
 using PzemReader.Models;
 using PzemReader.Services;
+using System.Net.Http.Json;
 
 namespace PzemReader
 {
@@ -48,7 +49,7 @@ namespace PzemReader
             {
                 var nowUtc = DateTime.UtcNow;
                 var minuteKey = GetMinuteKey(DateTime.Now);
-               
+
 
                 try
                 {
@@ -70,16 +71,16 @@ namespace PzemReader
                     _lastEnergy = data.Energy;
 
                     // 👉 เก็บ RAW
-                    await SaveRaw(data, nowUtc);  // every 5 วินาที
+                    await SaveRawPost(data, nowUtc);  // every 5 วินาที
 
 
-                   
+
 
                     // 👉 สะสมรายนาที
                     if (!_minuteBuffer.ContainsKey(minuteKey))
                     {
                         _minuteBuffer[minuteKey] = 0;
-                        
+
                     }
 
                     _energerTotal.Add(delta);
@@ -121,6 +122,33 @@ namespace PzemReader
             return new DateTime(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, 0);
         }
         // 🔹 save raw
+
+        private async Task SaveRawPost(dynamic data, DateTime now)
+        {
+           string apiurl = "http://localhost:5228/api/v1/Database/post-pzemraw";
+            var client = new HttpClient();
+            var raw = new List<PzemData>
+                {
+                    new()
+                    {
+                        Timestamp = DateTime.UtcNow,
+                         Voltage = data.Voltage,
+                            Current = data.Current,
+                            Power = data.Power,
+                            Energy = data.Energy,
+                            Frequency = data.Frequency,
+                            PowerFactor = data.PowerFactor,
+                            Alarm = data.Alarm,
+                    },
+
+                };
+            var response = await client.PostAsJsonAsync(apiurl,raw);
+
+            response.EnsureSuccessStatusCode();
+
+        }
+
+
         private async Task SaveRaw(dynamic data, DateTime now)
         {
             using var scope = _scopeFactory.CreateScope();
@@ -166,10 +194,10 @@ namespace PzemReader
             }
             catch (Exception ex)
             {
-              _logger.LogError(ex, "Error saving minute data");
-             
+                _logger.LogError(ex, "Error saving minute data");
+
             }
-            
+
         }
     }
 }

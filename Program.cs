@@ -10,6 +10,13 @@ namespace PzemReader
         {
             var builder = Host.CreateApplicationBuilder(args);
 
+
+            var conn = builder.Configuration.GetConnectionString("Default");
+
+            Console.WriteLine(conn);
+
+
+
             builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(builder.Configuration.GetConnectionString("Default"))
 );

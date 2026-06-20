@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+  <None Update="appsettings.json">
+  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
     <PackageReference Include="HslCommunication" Version="12.8.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.26" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.26">
